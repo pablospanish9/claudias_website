@@ -20,7 +20,95 @@ gray
 #595959
 */
 
-
-*{
-    background: #c8ddea;
+/* ---------------Global Styles--------- */
+body {
+    color: #343434;
+    margin: 0;
+    padding: 0;
 }
+
+a {
+    color:#7dafcc ;
+}
+
+a:hover{
+    background:#696969 ;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+img{
+    width:300px;
+}
+h2 {
+    margin: 0;
+}
+.content-wrap {
+    width: 800px;
+    margin:0 auto;
+    padding: 40px 0;
+}
+
+
+/* Profile
+-------------------------------------- */
+#claudia_header_info{
+   background-color:#811818 ; 
+   color: white;
+}
+
+
+
+/* Project
+-------------------------------------- */
+.projects {
+    background: #b6d2e2;
+}
+.projects a {
+    color:#b22222;
+}
+
+.projects .btn {
+    color: #cccccc;
+    background: #811818;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.projects a:hover {
+    background: rgba(129,24,24,80%) ;
+}
+/* Work Experience
+-------------------------------------- */
+
+.work-experience {
+    background:#cccccc;
+}
+/* ---transparency effect on button links--- */
+.work-experience a {
+    color: #cccccc;
+    background: #811818;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+/* ---transparency effect on button links--- */
+.work-experience a:hover {
+    background: rgba(129,24,24,80%) ;
+}
+
+/* Education
+-------------------------------------- */
+
+
+
+
+/* Footer 
+ --------------------------------- */
+
+ footer{
+     background:#595959;
+     color: white ;
+ }
