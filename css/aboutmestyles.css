@@ -71,17 +71,36 @@ h2 {
     font-size:38px ;
 }
 .content-wrap {
-    width: 800px;
+    max-width: 800px;
+    width: 85%;
     margin:0 auto;
     padding: 40px 0;
 }
+h3 {
+   margin-bottom: 0; 
+}
+.item-details h3 + p {
+    font-style: italic;
+}
 
-
+/* to remove space between h3 and paragraph */
+.item-details h3 ~ p {
+    margin:0
+}
+/* this is the dash line that separates items in project-item section */
+.divider > section {
+    border-bottom: 1px dashed #696969 ;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+border-bottom: none;
+}
 /* Profile
 -------------------------------------- */
-#claudia_header_info{
+#claudia_header_info {
    background-color:#811818 ; 
    color: white;
+
 }
 
 
@@ -89,7 +108,7 @@ h2 {
 /* Projects
 -------------------------------------- */
 .projects {
-    background: #b6d2e2;
+    background: #cccccc;
 }
 .projects a {
     color:#b22222;
@@ -112,22 +131,19 @@ h2 {
  pictures and more writing--- */
 .project-item {
     overflow:hidden ;
-    border-bottom: 1px dashed #696969 ;
-    padding: 25px 0;
 }
-.project-item img {
-    float:left;
-    margin-right: 25px;
-}
+
 
 .project-item h3 {
     margin-top: 0;
 }
+
+
 /* Work Experience
 -------------------------------------- */
 
 .work-experience {
-    background:#cccccc;
+    background:#b6d2e2;
 }
 /* ---transparency effect on button links--- */
 .work-experience a {
@@ -145,7 +161,15 @@ h2 {
 /* Education
 -------------------------------------- */
 
-
+.education {
+   background-image: url(../images/studybooks.jpg);
+   background-size: cover; 
+   /* background-position: top right; */
+   padding-bottom: 70px;
+}
+.education p {
+    width: 80%;
+}
 
 
 /* Footer 
@@ -154,4 +178,49 @@ h2 {
  footer{
      background:#595959;
      color: white ;
+ }
+.contact-list{
+    list-style-type: none;
+    padding: 0;
+ }
+ .contact-list a{
+    padding:15px;
+    display:inline-block;
+ }
+
+ /* Responsive styles
+ --------------------------------- */
+
+ @media screen and (min-width:750px) {
+    #claudia_header_info, footer {
+         text-align: center;
+     }
+    .project-item img {
+        float:left;
+        margin-right: 25px;
+    }
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+    .contact-list {
+        display:flex;
+        justify-content: center;
+    }
+ }
+ @media screen and (max-width:750px) {
+    h1 {
+        font-size: 80px;
+        margin-bottom:20px ;
+        /* line-height: 1; */
+     }
+
+     h1, h2 {
+         line-height: 1;
+     }
+
+     .contact-list a {
+         padding:5px;
+     }
  }
