@@ -17,10 +17,18 @@
     <main>
       <section id="claudia_header_info">
         <nav>
+              <!-- LOGO -->
+    <!-- <div class="logo">
+      <a href="home.html"><img src="images/newlogo.png"></a>
+      </div> -->
           <a href="#about">About</a>
           <a href="#work">Experience</a>
           <a href="#education">Education</a>
-          <a href="#contact">Contact me</a>
+          <!-- <a href="#contact">Contact me</a> -->
+          <a href="home.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="contactform.html">Contact</a>
         </nav>
         <div class="content-wrap">
 
@@ -270,7 +278,56 @@
       <li> <a href="https://www.linkedin.com/in/claudia-a-zar-3a24056a/" target="_blank">LinkedIn</a></li>
     </ul>
   </div>
-</footer>
+
+
+<!-- START School Footer -->
+<div class="schoolfooter">
+    <p><small>&copy; 2022  
+        <a href="contact.php">by Pablo Sepulveda</a>  
+        ~ All Rights Reserved  ~ 
+        <a id="html-checker" href="#">Check HTML</a> ~ 
+        <a id="css-checker" href="#">Check CSS</a></small>
+   </p>
+  </div>
+  </footer>
+  
+  <!-- END School Footer --> 
+  <!-- Below is the end container dive for entire page -->
+  </div>
+  <!-- END WRAPPER -->
+  
+  
+  <script>
+  //https://tinyurl.com/dynamic-html-checker
+  document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+          document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+  
+  //manages mobile nav - from W3Schools
+  function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+                 x.className += " responsive";
+        } else {
+                 x.className = "topnav";
+       }
+  }  
+  
+  //  <!-- Script for smooth shrinking nav bar -->
+  
+  const nav = document.querySelector('#navbar');
+  let navTop = nav.offsetTop;
+  
+  function fixedNav() {
+    if (window.scrollY >= 356) {    
+      nav.classList.add('sticky');
+    } else {
+      nav.classList.remove('sticky');    
+    }
+  }
+  
+  window.addEventListener('scroll', fixedNav);
+  
+  </script>
 <!-- ------------end of footer section-------------- -->
 
   </main>

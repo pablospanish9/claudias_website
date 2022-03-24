@@ -215,6 +215,21 @@ p + h3 {
     padding:15px;
     display:inline-block;
  }
+ .schoolfooter {
+    background: #808080;
+    width: 100%;
+    margin:0;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 5px 10px 8px 10px #2f1717;
+
+}
+
+.schoolfooter a {
+    margin-left:  40px; 
+   
+}
 
  /* Responsive styles
  --------------------------------- */
