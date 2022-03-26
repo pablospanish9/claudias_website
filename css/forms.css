@@ -1,0 +1,63 @@
+		/* start reCAPTCHA styles */
+
+        .wrappercontactme {
+            width:60%;
+            height: 600px;
+            padding: 120px 30px;
+            margin: 40px auto;
+            background-color: #bfbfbf;
+        }
+		
+		/* writes to small text above reCAPTCHA upon failure */
+		.dateFeedback{
+			font-style:italic;
+			font-size:70%;
+			font-weight:bold;
+			color:#f00;
+		}
+        input:required {
+              border: 1px solid rgb(130, 19, 19);
+              padding: 10px ;
+              border-radius: 5px;
+              margin-bottom: 14px;
+        }
+
+         input:optional, textarea:optional {
+             background-color:#f4f7f8;
+             border:1px solid rgb(164, 115, 115);
+             padding: 5px;
+             width: 350px;
+             height: 130px;
+             margin-bottom: 14px;
+        }
+
+        input[type="submit"], input[type="button"] {
+          background-color: #e77e7e;
+          border-radius: 5px;
+          border: solid px #150404;
+          width: 70px;
+          height: 30px;
+          padding: 0.4em 1em;
+          margin-top: 10px;
+        }
+
+        fieldset {
+          border: 1px solid #ccc;
+          max-width: 90px;
+        }
+
+        legend {
+          margin-left: 0.5em;
+          padding: 0.2em 0.5em;
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+        }
+        /* keeps form from bunching up to left */
+@media all and (min-width:501px){
+  div.wrapper form{
+      margin-left:50px;
+
+  }
+}
+
+        /* end reCAPTCHA styles */

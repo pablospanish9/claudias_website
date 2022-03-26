@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact me</title>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+ 
+ <link rel="stylesheet" href="css/forms.css">
+<link rel="stylesheet" href="css/homecss.css">
+
+</head>
+<body>
+
+<!-- <div class="container">                                      -->
+  <!-- navbar Start   -->
+
+<nav class="navbar" id="navbar">
+<!-- LOGO -->
+<div class="logo">
+  <a href="home.html"><img src="images/newlogo.png" alt="Logo image Claudia A'Zar interpretation and translation"></a>
+</div>
+<!-- NAVIGATION MENU -->
+<ul class="nav-links">
+<!-- USING CHECKBOX HACK -->
+<input type="checkbox" id="checkbox_toggle" />
+<label for="checkbox_toggle" class="hamburger">&#9776;</label>
+<!-- NAVIGATION MENUS -->
+<div class="menu">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="aboutme.html">About</a></li>
+  <li class="services">
+    <a href="services.html">Services</a>
+    <!-- DROPDOWN MENU -->
+    <!-- <ul class="dropdown">
+      <li><a href="#">Dropdown 1 </a></li>
+      <li><a href="#">Dropdown 2</a></li>
+
+    </ul> -->
+  </li>
+  <li><a href="faqs.html">FAQs</a></li>
+  <li><a href="contactform.html">Contact</a></li>
+</div>
+</ul>
+</nav>
+
+
+                          <!-- navbar End  -->
+
+
+<!-- Contact me section Start  -->
+<main class="wrappercontactme">
+<?php
+        /*
+         * Below are 2 different forms to be re-used       
+         * 
+         * Only use one at a time, comment out the other!       
+         *
+         */
+
+        include 'includes/contact_include.php'; #site keys & code here
+    
+        $toAddress = "pablospanish9@msn.com";  //place your/your client's email address here
+        $toName = "CLIENT NAME HERE"; //place your client's name here
+        $website = "CLIENT WEBSITE NAME HERE";  //place NAME of your client's website
+
+        echo loadContact('simple.php');#demonstrates a simple contact form
+        //echo loadContact('multiple.php');#demonstrates multiple form elements
+
+	?>
+</main>
+<!-- Contact me section End  -->
+
+<!-- Boilerplate footer Section Start  -->
+<footer>
+
+<div class="add">
+  <h1>address</h1>
+  <ul>
+      <li><a href=""><i class="fas fa-map-marker-alt"></i>4742 42nd Ave. SW #543
+        Seattle, WA 98116
+        </a></li>
+      <!-- <li><a href=""><i class="fas fa-phone"></i>+92 3428561223</a></li> -->
+      <li><a href=""><i class="fas fa-envelope"></i>info@claudiaazar.com</a></li>
+  </ul>
+</div>
+
+<div class="page">
+  <h1>page</h1>
+  <ul>
+      <li><a href="">home</a></li>
+      <li><a href="">about </a></li>
+      <li><a href="">services</a></li>
+      <li><a href="">FAQs</a></li>
+      <li><a href="">contact</a></li>
+  </ul>
+</div>
+
+<div class="link">
+  <h1>follow me</h1>
+  <a href="" id="facebook"> <i class="fab fa-facebook"></i></a>
+  <a href=""><i class="fab fa-twitter"></i></a>
+  <a href=""><i class="fab fa-instagram"></i></a>
+      <a href=""><i class="fab fa-linkedin-in"></i></a>
+</div>
+
+<div class="payment">
+  <h1>How to pay</h1>
+  <p>After my service to you is completed, please send me a check, 
+    or ask me to send you a link to pay via PayPal/Credit card </p>
+
+  <a href=""><i class="fab fa-cc-visa"></i></a>
+  <a href="">  <i class="fab fa-paypal"></i></a>
+      <a href=""><i class="fab fa-cc-mastercard"></i></a>
+          <a href=""> <i class="fab fa-amazon"></i></a>
+</div>
+
+
+<!-- Boilerplate footer Section End  -->
+
+
+<!-- START School Footer -->
+<div class="schoolfooter">
+  <p><small>&copy; 2022  
+      <a href="contact.php">by Pablo Sepulveda</a>  
+      ~ All Rights Reserved  ~ 
+      <a id="html-checker" href="#">Check HTML</a> ~ 
+      <a id="css-checker" href="#">Check CSS</a></small>
+ </p>
+</div>
+</footer>
+
+<!-- END School Footer --> 
+<!-- Below is the end container div for entire page -->
+<!-- </div> -->
+<!-- END WRAPPER -->
+
+
+<script>
+//https://tinyurl.com/dynamic-html-checker
+document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+        document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href); 
+
+//manages mobile nav - from W3Schools
+function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+               x.className += " responsive";
+      } else {
+               x.className = "topnav";
+     }
+}  
+
+//  <!-- Script for smooth shrinking nav bar -->
+
+const nav = document.querySelector('#navbar');
+let navTop = nav.offsetTop;
+
+function fixedNav() {
+  if (window.scrollY >= 356) {    
+    nav.classList.add('sticky');
+  } else {
+    nav.classList.remove('sticky');    
+  }
+}
+
+window.addEventListener('scroll', fixedNav);
+
+</script>
+</body>
+</html>

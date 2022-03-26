@@ -34,6 +34,7 @@ font-family: 'Ubuntu', sans-serif;
 
 body{
     font-family: 'Varela Round', sans-serif;
+    background-color: #d9d9d9;
 }
 
 
@@ -56,7 +57,8 @@ body{
 /* logo img*/
 
 .logo img {
-    width: 260px;
+    width: 280px;
+    margin-left: 20px;
 }
 
 /* logo img end */
@@ -343,7 +345,7 @@ text-transform: uppercase;
     color: white;
     margin-bottom: 30px;
 }
-.wrapper{
+.wrapper {
 /* width: 1170px; */
 /* margin: 5% auto; */
 width: 100%;
@@ -485,48 +487,49 @@ left: 110%;
     width: 100%;
     height: auto;
     padding: 90px 0;
-    background-color: rgb(125,175,204); 
+    background-color: #6ca5c6; 
     
     /* background-color: rgb(107, 140, 194); */
     text-align: center;
     text-transform: uppercase;
     color: #fff;
-    margin-top: -10px;
+    /* margin-top: -10px; */
     
 }
 
-.contact .help{
+.contact .help {
     padding: 20px 0;
     margin: 0;
 }
-.contact .help h1{
+.contact .help h2{
     font-size: 45px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 .contact .help h3{
-    width: 100%;
+    width: 80%;
     /* padding: 0 40px; */
 }
 
 .contact .phone{
-    padding: 50px 0;
+    padding: 40px 0;
+    margin-top: 20px;
 }
 .contact .phone h1{
-    margin-bottom: 15px;
+    margin-bottom: 1px;
 }
 
-.contact .phone h3{
-    padding: 8px;
+.contact .phone h3 a {
+    padding: 20px;
+    margin: 10px;
+    color: #811818;
 }
-.contact .email h1{
- margin-bottom: 10px;
-}
+
 .contact .location{
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .contact .location h1{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* SECTION 5 CSS END */
@@ -692,7 +695,7 @@ left: 110%;
 
   /* contact page CSS End */
 
-  
+/*   
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -702,7 +705,7 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
+  } */
   
 
   .container-contact {
@@ -769,10 +772,50 @@ background-color: rgb(125,175,204);
         margin: 25px 0;
     }
     .bet-footer{
-        padding: 100px 0;
+        padding: 30px 0;
     }
+/* FAQs w3 School styles */
+.w3faqsection {
+    width: 80%;
+    margin: 0 auto;
+}
+.w3faqsection h3 {
+    font-size: 18px;
+    padding: 18px;
+}
+.w3faqsection h2 {
+    padding: 20px 0;
+    margin-top:15px ;
+    font-size: 30px;
+}
 
-/* faQs section Start CSS */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #24475c;
+  }
+  
+  .contentw3 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #e1d7d7;
+  }
+
+/* faQs section End CSS */
+
 
 
 /* contact page slide CSS */
@@ -859,7 +902,7 @@ padding: 17% 0;
 }
 
 
-.section-5 h1 {
+.section-5 h2 {
     text-transform: uppercase;
     color: #f2f2f2;
     background-color: #811818;
@@ -902,10 +945,11 @@ section.section-5 {
     width: 55%;
 }
 
-.section-6 h1 {
+.section-6 h2 a {
     text-transform: uppercase;
-    back
-    font-size: 60px;
+
+    font-size: 50px;
+
     /* text-decoration: underline; */
 }
 
@@ -1255,7 +1299,7 @@ section.section-6 {
 section.section-5 {
     padding: 0;
 }
-.section-5 h1 {
+.section-5 h2 {
     position: relative;
     margin-left: 0;
 }
