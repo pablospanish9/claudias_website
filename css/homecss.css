@@ -37,7 +37,11 @@ body{
     background-color: #d9d9d9;
 }
 
-
+.hftemplate {
+    height: 200px;
+    margin-top: 200px;
+    background-color: #6ca5c6;
+}
 
 /* Header css */
 
@@ -280,7 +284,7 @@ color: rgb(125,175,204);
     /* font-size: 50px; */
     /* line-height: 110px; */
     font-weight: 800;
-    margin-top: 100px;
+    margin-top:  px;
     text-transform: uppercase;
     color: white;
 }
@@ -1038,7 +1042,12 @@ section.section-6 {
 /* about new end */
 
 
-
+#disclaimer {
+    width: 80%;
+    margin-top: 400px;
+    height: 400px;
+    background-color: #b3b3b3;
+}
 
 
 /* footer Section Start CSS */
