@@ -30,7 +30,7 @@
   <h1>follow me</h1>
   <a href="https://www.linkedin.com/in/claudia-a-zar-3a24056a/" id="facebook" target="_blank"> <i class="fab fa-facebook"></i></a>
   <a href="https://www.linkedin.com/in/claudia-a-zar-3a24056a/" target="_blank"><i class="fab fa-instagram" ></i></a>
-      <a href="https://www.linkedin.com/in/claudia-a-zar-3a24056a/"target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.linkedin.com/in/claudia-a-zar-3a24056a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 </div>
 
 <div class="payment">
