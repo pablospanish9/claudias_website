@@ -1,69 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex,nofollow" />
-    <title>About me Claudia</title>
-
-    <!-- -----Google Fonts:--------------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Montserrat&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <!-- --------Styles-------------- -->
-    <link rel="stylesheet" href="css/homecss.css">
-    <link rel="stylesheet" href="css/aboutmestyles.css">
-
-  </head>
-  <body>
-  
-        <!-- Template navbar Start   -->
-
-<nav class="navbar" id="navbar">
-  <!-- LOGO -->
-  <div class="logo">
-    <a href="index.html"><img src="images/newlogo.png" alt="Logo image Claudia A'Zar interpretation and translation"></a>
-  </div>
-  <!-- NAVIGATION MENU -->
-  <ul class="nav-links">
-  <!-- USING CHECKBOX HACK -->
-  <input type="checkbox" id="checkbox_toggle" />
-  <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-  <!-- NAVIGATION MENUS -->
-  <div class="menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="aboutme.html">About</a></li>
-    <li class="services">
-      <a href="services.html">Services</a>
-      <!-- DROPDOWN MENU -->
-      <!-- <ul class="dropdown">
-        <li><a href="#">Dropdown 1 </a></li>
-        <li><a href="#">Dropdown 2</a></li>
-  
-      </ul> -->
-    </li>
-    <li><a href="faqs.html">FAQs</a></li>
-    <li><a href="contactform.html">Contact</a></li>
-  </div>
-  </ul>
-  </nav>
+<?php include 'includes/header.php';?>
 
         <!-- Template navbar End   -->
+    <div class="aboutmepage">   
       <section class="claudia_header_info">
-        <nav>
-              <!-- LOGO -->
-    <!-- <div class="logo">
-      <a href="home.html"><img src="images/newlogo.png"></a>
-      </div> -->
+        <!-- Additional nav maybe for the side in future -->
+        <!-- <nav>
           <a href="#about">About</a>
           <a href="#work">Experience</a>
           <a href="#education">Education</a>
-          <!-- <a href="#contact">Contact me</a> -->
-          <!-- <a href="index.html">Home</a> -->
-          <!-- <a href="services.html">Services</a>
-          <a href="faqs.html">FAQs</a>
-          <a href="contactform.html">Contact</a> -->
-        </nav>
+        </nav> -->
         <div class="content-wrap">
 
           <h1>Claudia A'Zar</h1>
@@ -301,6 +246,9 @@
     <h2>Let's Keep in Touch!</h2>
 </div>
 
+<!-- End aboutmepage class div below -->
+
+</div> 
 <!-- Start Footer cut out -->
 
 <?php include 'includes/footer.php';?>

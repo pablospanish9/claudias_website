@@ -50,7 +50,7 @@
 
 <!-- START School Footer -->
 <div class="schoolfooter">
-  <p><small>&copy; 2022  
+  <p><small>&copy; <?=date('Y')?> 
       <a href="https://gabsep5.wixsite.com/mysite" target="_blank">by Pablo Sepulveda</a> 
       <!-- <a href="disclaimer.php" target="_blank">disclaimer</a>  -->
       ~ All Rights Reserved  ~ 

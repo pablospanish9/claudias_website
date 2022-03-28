@@ -1,13 +1,20 @@
+<?php include 'cl-config.php'?>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+<title><?=$title?></title>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Claudia A'Zar</title>
+
+    <!-- -----Google Fonts:--------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Montserrat&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <!-- --------Styles-------------- -->
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+ <link rel="stylesheet" href="css/aboutmestyles.css">
 <link rel="stylesheet" href="css/homecss.css">
 <link rel="stylesheet" href="css/navbarstyles.css">
 <link rel="stylesheet" href="css/forms.css">
@@ -28,11 +35,14 @@
 </div>
 <!-- NAVIGATION MENU -->
 <div class="topnav" id="myTopnav">
-    <a href="index.php">Home</a>
+<?=makeLinks($nav1)?>
+
+    <!-- Start comment out original Nav
+     <a href="index.php">Home</a>
     <a href="aboutme.html" >About me</a>
     <a href="services.php">Services</a>
     <a href="faqs.php">FAQs</a>
-    <a href="contactme.php">Contact me</a>
+    <a href="contactme.php">Contact me</a> -->
     
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
